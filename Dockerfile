@@ -9,7 +9,7 @@ CMD ["/sbin/my_init"]
 
 # Install Scribus
 ADD ./files /files/
-RUN chmod +x /files/install.sh # && sleep 1 && /files/install.sh && rm -r /files
+RUN chmod +x /files/install.sh && sleep 1 && /files/install.sh && rm -r /files
 
 VOLUME ["/config"]
 EXPOSE 3389 8080
