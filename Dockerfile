@@ -11,5 +11,5 @@ CMD ["/sbin/my_init"]
 ADD ./files /files/
 RUN chmod +x /files/install.sh && sleep 1 && /files/install.sh && rm -r /files
 
-VOLUME ["/config"]
+VOLUME ["/nobody/.scribus"]
 EXPOSE 3389 8080
